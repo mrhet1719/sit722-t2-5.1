@@ -1,26 +1,145 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+<head>
+    <title>SIT722 Glossary</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th {
+            text-align: center;
+            border: 2px solid black; /* Add this line to make the header cell borders bold */
+        }
+        th, td {
+            border: 2px solid black; /* Add this line to make the cell borders bold */
+            padding: 8px;
+        }
+        th:nth-child(3),
+        td:nth-child(3) {
+            width: 40%;
+        }
+        th:nth-child(4),
+        td:nth-child(4) {
+            width: 20%;
+        }
+    </style>
   </head>
   <body>
     <h1><%= title %></h1>
-    <p>Welcome to <%= sub %></p>
+    <p><%= sub %></p>
     <table>
-      <% names.forEach((name) => { %>
       <tr>
-        <td>
-          <%= name.id %>
-        </td>
-        <td>
-          <%= name.name %>
-        </td>
-        <td>
-          <%= name.email %>
-        </td>
+          <th>ID#</th>
+          <th>Term</th>
+          <th>Description</th>
+          <th>References</th>
+      </tr>      
+      <tr>
+          <td>1</td>
+          <td>Agile Development</td>
+          <td>Agile development is an iterative and incremental software development approach that emphasizes collaboration, 
+              adaptability, and customer feedback to deliver high-quality products efficiently.</td>
+          <td>[1]     A. Cockburn, J. Highsmith, A. Kern, J. W. Scrum. Agile software development: The cooperative game, IEEE Computer, 2001.https://www.researchgate.net/publication/265754004_Agile_Software_Development_The_Cooperative_Game_An_Overview
+          </td>
       </tr>
-    <% }) %>
-    </table>
-  </body>
+      <tr>
+          <td>2</td>
+          <td>Docker</td>
+          <td>Docker is an open-source containerization platform that allows developers to package applications and their dependencies 
+              into lightweight, portable containers for easy deployment and scalability.</td>
+          <td>[2]     Turnbull. The Docker Book: Containerization Is the New Virtualization, Lulu, 2014. 
+                      https://books.google.com.au/books/about/The_Docker_Book.html?id=4xQKBAAAQBAJ&redir_esc=y
+          </td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>Cloud</td>
+          <td>Cloud computing refers to the delivery of computing resources, such as servers, databases, networking, 
+              and storage, over the internet on a pay-as-you-go basis.</td>
+          <td>[3]     P. Mell, T. Grance. The NIST Definition of Cloud Computing, National Institute of Standards and Technology, 2011.
+                      https://csrc.nist.gov/pubs/sp/800/145/final#:~:text=Cloud%20computing%20is%20a%20model,effort%20or%20service%20provider%20interaction.
+          </td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>DevOps</td>
+          <td>DevOps is a collaborative culture and set of practices that unify development and operations teams to streamline software delivery, 
+              improve efficiency, and enhance communication through automation and continuous integration.
+          </td>
+          <td>[4]     Amazon, "What is DevOps? - Amazon Web Services (AWS)," Amazon Web Services, Inc., 2019. 
+                      https://aws.amazon.com/devops/what-is-devops/
+          </td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td>Wall of Confusion</td>
+          <td>Wall of Confusion refers to the barriers and miscommunication between development and operations teams in 
+              non-DevOps organizations, hindering effective collaboration and workflow.</td>
+          <td>[5]     S. Kawaguchi, "The Wall of Confusion," Medium, Feb. 12, 2022. 
+                      https://levelup.gitconnected.com/the-wall-of-confusion-623057a4dd26
+          </td>
+      </tr>
+      <tr>
+          <td>6</td>
+          <td>Kubernetes</td>
+          <td>Kubernetes is an open-source container orchestration platform that automates the deployment, scaling, 
+              and management of containerized applications, simplifying container management across clusters.
+          </td>
+          <td>[6]     B. Burns, J. Beda, B. Grant. Design Patterns for Container-Based Distributed Systems, USENIX, 2016. 
+                      https://www.usenix.org/conference/hotcloud16/workshop-program/presentation/burns
+          </td>
+      </tr>
+
+      <tr>
+          <td>7</td>
+          <td>Silos</td>
+          <td>
+              Silos refer to isolated and disconnected teams or departments within an organization, 
+              which obstruct effective collaboration and communication, often leading to inefficiencies.
+          </td>
+          <td>[7]     S. McConnell. Software Project Survival Guide, Microsoft Press, 1998. 
+                      https://dl.acm.org/doi/10.5555/270015
+          </td>
+      </tr>
+
+      <tr>
+          <td>8</td>
+          <td>Microservices</td>
+          <td>
+              Microservices is an architectural style where an application is composed of small, 
+              independent services that communicate through APIs, allowing for modular development, deployment, and scalability.
+          </td>
+          <td>[8]     M. Fowler. Microservices: A definition of this new architectural term, martinfowler.com, 2014. 
+                      https://martinfowler.com/articles/microservices.html#:~:text=In%20short%2C%20the%20microservice%20architectural,often%20an%20HTTP%20resource%20API.
+          </td>
+      </tr>
+
+      <tr>
+          <td>9</td>
+          <td>SDLC (Software Development Life-cycle)</td>
+          <td>
+              SDLC is a structured approach to software development that encompasses planning, design, coding, 
+              testing, deployment, and maintenance, ensuring a systematic and organized development process.
+          </td>
+          <td>[9]     W. Moore. A Life Cycle Model for Software Development and Support, IEEE Transactions on Software Engineering, 1987. 
+                      https://dl.acm.org/doi/10.5555/4330
+
+
+          </td>
+      </tr>
+      <tr>
+          <td>10</td>
+          <td>Terraform</td>
+          <td>
+              Terraform is an open-source infrastructure as code (IaC) tool that allows developers to define and manage 
+              cloud infrastructure through declarative configuration files, enabling consistent and automated infrastructure provisioning.
+          </td>
+          <td>[10]    M. Wittig and Y. Wittig, "Terraform: Up and Running, 3rd Edition [Book]," O'Reilly, 2019. 
+                      https://learning.oreilly.com/library/view/terraform-up-and/9781098116736/ch01.html
+          </td>
+      </tr>
+  </table>
+</body>
+
 </html>
