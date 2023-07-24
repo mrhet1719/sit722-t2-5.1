@@ -64,14 +64,10 @@ router.get('/', function(req, res, next) {
       "Description": "Terraform is an open-source infrastructure as code (IaC) tool that allows developers to define and manage cloud infrastructure through declarative configuration files, enabling consistent and automated infrastructure provisioning.",
       "References": "[10] M. Wittig and Y. Wittig, Terraform: Up and Running, 3rd Edition [Book], O'Reilly, 2019. https://learning.oreilly.com/library/view/terraform-up-and/9781098116736/ch01.html"
     },
-    // Add more entries to the JSON array as needed
   ];
 
   res.render('index', {
-    title: 'DevOps SIT722 Glossary',
-    sub: 'Explore my website featuring a curated collection of DevOps terms and their concise descriptions.',
-    glossaryData: glossaryData
-  });
+    title: 'DevOps SIT722 Glossary', sub: 'Explore my website featuring a curated collection of DevOps terms and their concise descriptions.',glossaryData: glossaryData });
 });
 
 module.exports = router;
