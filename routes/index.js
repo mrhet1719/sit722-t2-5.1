@@ -64,6 +64,66 @@ router.get('/', function(req, res, next) {
       "Description": "Terraform is an open-source infrastructure as code (IaC) tool that allows developers to define and manage cloud infrastructure through declarative configuration files, enabling consistent and automated infrastructure provisioning.",
       "References": "[10] M. Wittig and Y. Wittig, Terraform: Up and Running, 3rd Edition [Book], O'Reilly, 2019. https://learning.oreilly.com/library/view/terraform-up-and/9781098116736/ch01.html"
     },
+    {
+      "ID": 11,
+      "Term": "Azure",
+      "Description": "Microsoft's cloud computing platform that offers a range of services for building, deploying, and managing applications and services through a global network of data centers.",
+      "References": "[11] Wikipedia Contributors, “Microsoft Azure,” Wikipedia, Oct. 12, 2019. https://en.wikipedia.org/wiki/Microsoft_Azure"
+    },
+    {
+      "ID": 12,
+      "Term": "Google Cloud",
+      "Description": "Google's suite of cloud computing services that provide infrastructure, storage, data analytics, machine learning, and other cloud-based solutions.",
+      "References": "[12] Wikipedia Contributors, “Google Cloud Platform,” Wikipedia, Oct. 11, 2019. https://en.wikipedia.org/wiki/Google_Cloud_Platform"
+    },
+    {
+      "ID": 13,
+      "Term": "Architecture Development Method (ADM)",
+      "Description": "The Architecture Development Method (ADM) is a step-by-step process within the TOGAF framework for creating and managing enterprise architectures. It provides a structured approach to design, plan, and implement architecture solutions.",
+      "References": "[13] “What is TOGAF Architecture Development Method - EA Learning,” www.ealearning.com. https://www.ealearning.com/info-centre/togaf-adm.html#:~:text=The%20ADM%20is%20a%20generic."
+    },
+    {
+      "ID": 14,
+      "Term": "Minimum Viable Product (MVP)",
+      "Description": "A version of a product with the minimum features required to satisfy early customers and gather feedback for future development.",
+      "References": "[14] ProductPlan, “What is a Minimum Viable Product (MVP)? | A Product Mgmt Definition,” www.productplan.com, 2022. https://www.productplan.com/glossary/minimum-viable-product/"
+    },
+    {
+      "ID": 15,
+      "Term": "Continuous Integration/Continuous Deployment (CI/CD)",
+      "Description": "Continuous Integration/Continuous Deployment, a software development practice where code changes are automatically built, tested, and deployed to production.",
+      "References": "[15] Redhat, “What is CI/CD?,” Redhat.com, 2019. https://www.redhat.com/en/topics/devops/what-is-ci-cd"
+    },
+    {
+      "ID": 16,
+      "Term": "DevOps Cycle",
+      "Description": "A set of continuous development, testing, deployment, and monitoring practices aimed at improving collaboration and efficiency between software developers and IT operations teams.",
+      "References": "[16] “DevOps Lifecycle : Different Phases in DevOps,” BrowserStack. https://www.browserstack.com/guide/devops-lifecycle#:~:text=The%20DevOps%20lifecycle%20is%20a"
+    },
+    {
+      "ID": 17,
+      "Term": "Productivity",
+      "Description": "The measure of how efficiently resources, such as time and effort, are utilized to achieve desired outputs or results.",
+      "References": "[17] corporateName:Productivity Commission, “What is Productivity?,” www.pc.gov.au, May 13, 2021. https://www.pc.gov.au/what-is-productivity"
+    },
+    {
+      "ID": 18,
+      "Term": "Everything-as-Code",
+      "Description": "The practice of representing all aspects of software development and infrastructure management as code, allowing for automation and version control.",
+      "References": "[18] O. Deploy, “What is Everything as Code?,” Octopus Deploy. https://octopus.com/blog/what-is-everything-as-code#:~:text=Everything%20as%20Code%20(EaC)%20is"
+    },
+    {
+      "ID": 19,
+      "Term": "IT Service Management",
+      "Description": "A set of practices for planning, delivering, managing, and improving IT services to meet the needs of an organization and its customers.",
+      "References": "[19] Wikipedia Contributors, “IT service management,” Wikipedia, Mar. 20, 2019. https://en.wikipedia.org/wiki/IT_service_management"
+    },
+    {
+      "ID": 20,
+      "Term": "DevOps Principles",
+      "Description": "Core principles in the DevOps culture, including automation, collaboration, continuous feedback, and shared responsibility between development and operations teams.",
+      "References": "[20] S. Roddewig, “7 Principles of DevOps for Successful Development Teams,” blog.hubspot.com. https://blog.hubspot.com/website/devops-principles"
+    },
   ];
 
   res.render('index', {
