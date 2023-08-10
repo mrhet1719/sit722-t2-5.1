@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>SIT722 Glossary</title>
     <style>
@@ -7,27 +8,37 @@
             width: 100%;
             border-collapse: collapse;
         }
+
         th {
             text-align: center;
             border: 2px solid black;
         }
-        th, td {
+
+        th,
+        td {
             border: 2px solid black;
             padding: 8px;
         }
+
         th:nth-child(3),
         td:nth-child(3) {
             width: 40%;
         }
+
         th:nth-child(4),
         td:nth-child(4) {
             width: 20%;
         }
     </style>
 </head>
+
 <body>
-    <h1><%= title %></h1>
-    <p><%= sub %></p>
+    <h1>
+        <%= title %>
+    </h1>
+    <p>
+        <%= sub %>
+    </p>
     <table>
         <tr>
             <th>ID#</th>
@@ -36,13 +47,22 @@
             <th>References</th>
         </tr>
         <% for (let entry of glossaryData) { %>
-        <tr>
-            <td><%= entry.ID %></td>
-            <td><%= entry.Term %></td>
-            <td><%= entry.Description %></td>
-            <td><%= entry.References %></td>
-        </tr>
-        <% } %>
+            <tr>
+                <td>
+                    <%= entry.ID %>
+                </td>
+                <td>
+                    <%= entry.Term %>
+                </td>
+                <td>
+                    <%= entry.Description %>
+                </td>
+                <td>
+                    <%= entry.References %>
+                </td>
+            </tr>
+            <% } %>
     </table>
 </body>
+
 </html>

@@ -2,132 +2,133 @@ var express = require('express');
 var router = express.Router();
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/', function (req, res, next) {
   const glossaryData = [
     {
       "ID": 1,
-      "Term": "Agile Development",
-      "Description": "Agile development is an iterative and incremental software development approach that emphasizes collaboration, adaptability, and customer feedback to deliver high-quality products efficiently.",
-      "References": "[1] A. Cockburn, J. Highsmith, A. Kern, J. W. Scrum. Agile software development: The cooperative game, IEEE Computer, 2001. https://www.researchgate.net/publication/265754004_Agile_Software_Development_The_Cooperative_Game_An_Overview"
+      "Term": "DevOps",
+      "Description": "DevOps combines development (Dev) and operations (Ops) to unite people, process, and technology in application planning,development, delivery, and operations.",
+      "References": "M. Jacobs, Katherin EE, V. Thepet, Ed Kaim, Steved Ox & Dan Hellem (2023, January 01). What is DevOps?. Retrieved from \"https://learn.microsoft.com/en-us/devops/what-is-devops/\""
     },
     {
       "ID": 2,
-      "Term": "Docker",
-      "Description": "Docker is an open-source containerization platform that allows developers to package applications and their dependencies into lightweight, portable containers for easy deployment and scalability.",
-      "References": "[2] Turnbull. The Docker Book: Containerization Is the New Virtualization, Lulu, 2014. https://books.google.com.au/books/about/The_Docker_Book.html?id=4xQKBAAAQBAJ&redir_esc=y"
+      "Term": "Wall of Confusion",
+      "Description": "In non-DevOps businesses, development and operations teams are separated by silos, which act as a barrier between the two sides.",
+      "References": "Abhinav Krishna Kaiser (2021, January 13). DevOps Wall of Confusion Explained. Technopedia. Retrieved from \"http://technopedia.info/devops/devops-wall-of-confusion-explained/\""
     },
     {
       "ID": 3,
-      "Term": "Cloud",
-      "Description": "Cloud computing refers to the delivery of computing resources, such as servers, databases, networking, and storage, over the internet on a pay-as-you-go basis.",
-      "References": "[3] P. Mell, T. Grance. The NIST Definition of Cloud Computing, National Institute of Standards and Technology, 2011. https://csrc.nist.gov/pubs/sp/800/145/final#:~:text=Cloud%20computing%20is%20a%20model,effort%20or%20service%20provider%20interaction."
+      "Term": "Microservices",
+      "Description": "A microservice is a software architectural approach that splits an application's various functions into smaller components known as \"services.\" A microservice architecture is used when an application is constructed in this manner.",
+      "References": "Jamie Juviler (2020, November 23). Microservices vs. APIs: What's the Difference?. Hubspot. Retrieved from \"https://blog.hubspot.com/website/microservices-vs-api\""
     },
     {
       "ID": 4,
-      "Term": "DevOps",
-      "Description": "DevOps is a collaborative culture and set of practices that unify development and operations teams to streamline software delivery, improve efficiency, and enhance communication through automation and continuous integration.",
-      "References": "[4] Amazon, What is DevOps? - Amazon Web Services (AWS), Amazon Web Services, Inc., 2019. https://aws.amazon.com/devops/what-is-devops/"
+      "Term": "Waterfall Model",
+      "Description": "Software development uses a technique called the waterfall paradigm. Because it is a linear-sequential life cycle model, each step must be finished before moving on to the next.",
+      "References": "Clifford Chi (2018, December 30). Everything You Need to Know About Using the Waterfall Methodology.Hubspot.Retrieved from \"https://blog.hubspot.com/marketing/waterfall-methodology\""
     },
     {
       "ID": 5,
-      "Term": "Wall of Confusion",
-      "Description": "Wall of Confusion refers to the barriers and miscommunication between development and operations teams in non-DevOps organizations, hindering effective collaboration and workflow.",
-      "References": "[5] S. Kawaguchi, The Wall of Confusion, Medium, Feb. 12, 2022. https://levelup.gitconnected.com/the-wall-of-confusion-623057a4dd26"
+      "Term": "Git",
+      "Description": "You may keep track of the incremental changes you make to your code using a GIT version control system (VCS). As a result, you can try new things while also having the ability to go back and utilize an earlier version of the code that produced the desired results",
+      "References": "Jhon. D Blischak (2016, January 19).A Quick Introduction to Version Control with Git and GitHub. Plos. Retrieved from \"https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004668\""
     },
     {
       "ID": 6,
-      "Term": "Kubernetes",
-      "Description": "Kubernetes is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications, simplifying container management across clusters.",
-      "References": "[6] B. Burns, J. Beda, B. Grant. Design Patterns for Container-Based Distributed Systems, USENIX, 2016. https://www.usenix.org/conference/hotcloud16/workshop-program/presentation/burns"
+      "Term": "DevOps and the Cloud",
+      "Description": "DevOps and cloud are inseparable. DevOps is used in the vast majority of cloud development projects, and the list is growing. The advantages of utilizing DevOps with cloud projects are also becoming clearer.",
+      "References": "David Linthicum.DevOps dictates new approach to cloud development. Teach Beacon. Retrieved from \"https: //techbeacon.com/app-dev-testing/devops-dictates-new-approach-cloud-development\""
     },
     {
       "ID": 7,
-      "Term": "Silos",
-      "Description": "Silos refer to isolated and disconnected teams or departments within an organization, which obstruct effective collaboration and communication, often leading to inefficiencies.",
-      "References": "[7] S. McConnell. Software Project Survival Guide, Microsoft Press, 1998. https://dl.acm.org/doi/10.5555/270015"
+      "Term": "Agile Methodology",
+      "Description": "The Agile technique is an iterative way to managing projects and creating software that uses test-driven development and feedback loops to address issues.",
+      "References": "Erin Eatough (2022, July 20).What is Agile methodology and how does it work?. Better Up. Retrieved from \"https: //www.betterup.com/blog/agile-methodology\""
     },
     {
       "ID": 8,
-      "Term": "Microservices",
-      "Description": "Microservices is an architectural style where an application is composed of small, independent services that communicate through APIs, allowing for modular development, deployment, and scalability.",
-      "References": "[8] M. Fowler. Microservices: A definition of this new architectural term, martinfowler.com, 2014. https://martinfowler.com/articles/microservices.html#:~:text=In%20short%2C%20the%20microservice%20architectural,often%20an%20HTTP%20resource%20API."
+      "Term": "Shift Left",
+      "Description": "Moving testing, quality assurance, and performance evaluation early in the development cycle—often before any code is written—is known as \"shift left.\" Teams can anticipate changes that may occur during the development process that may have an impact on performance or other delivery procedures by using shift left testing.",
+      "References": "Saif Gunja (2022, October 27).Shift left vs shift right: A DevOps mystery solved. Dynatrace. Retrieved from \"https: //www.dynatrace.com/news/blog/what-is-shift-left-and-what-is-shift-right\""
     },
     {
       "ID": 9,
-      "Term": "SDLC (Software Development Life-cycle)",
-      "Description": "SDLC is a structured approach to software development that encompasses planning, design, coding, testing, deployment, and maintenance, ensuring a systematic and organized development process.",
-      "References": "[9] W. Moore. A Life Cycle Model for Software Development and Support, IEEE Transactions on Software Engineering, 1987. https://dl.acm.org/doi/10.5555/4330"
+      "Term": "Node",
+      "Description": "JavaScript code can be run in the open source, cross-platform runtime environment known as Node.js (Node). Developers can utilize JavaScript for both client-side and server-side code without having to learn another language because Node is widely used for server-side programming.",
+      "References": "Robert Sheldon .What is Node.js (Node)?. Tech Target. Retrieved from \"https: //www.techtarget.com/whatis/definition/Nodejs\""
     },
     {
       "ID": 10,
-      "Term": "Terraform",
-      "Description": "Terraform is an open-source infrastructure as code (IaC) tool that allows developers to define and manage cloud infrastructure through declarative configuration files, enabling consistent and automated infrastructure provisioning.",
-      "References": "[10] M. Wittig and Y. Wittig, Terraform: Up and Running, 3rd Edition [Book], O'Reilly, 2019. https://learning.oreilly.com/library/view/terraform-up-and/9781098116736/ch01.html"
+      "Term": "Cloud Computing",
+      "Description": "Different services are delivered via the Internet through cloud computing. These tools and programs comprise software, servers, databases, networking, and data storage, among other things.",
+      "References": "Jake Franken Field (2023, April 05). What is Cloud Computing? Pros and Cons of Different Types of Services. Investopedia. Retrieved from \"https://www.investopedia.com/terms/c/cloud-computing.asp\""
     },
     {
       "ID": 11,
-      "Term": "Azure",
-      "Description": "Microsoft's cloud computing platform that offers a range of services for building, deploying, and managing applications and services through a global network of data centers.",
-      "References": "[11] Wikipedia Contributors, “Microsoft Azure,” Wikipedia, Oct. 12, 2019. https://en.wikipedia.org/wiki/Microsoft_Azure"
+      "Term": "Minimum Viable Product",
+      "Description": "MVP is the most basic version of a product with essential features, created to gather user feedback and validate the product idea.",
+      "References": "JUrszula Kotowska (2023, May 23). Building MVPs and Validating Products - Practical Guide. Survicate. Retrieved from \"https://survicate.com/blog/building-mvp/\""
     },
     {
       "ID": 12,
-      "Term": "Google Cloud",
-      "Description": "Google's suite of cloud computing services that provide infrastructure, storage, data analytics, machine learning, and other cloud-based solutions.",
-      "References": "[12] Wikipedia Contributors, “Google Cloud Platform,” Wikipedia, Oct. 11, 2019. https://en.wikipedia.org/wiki/Google_Cloud_Platform"
+      "Term": "Automation",
+      "Description": "Automation in DevOps streamlines and accelerates software development and deployment processes through the use of automated tools and scripts.",
+      "References": "Binod Anand (2023, July 14). What is DevOps Automation? Tools, Best Practices. KnowledgeHut. Retrieved from \"https://www.knowledgehut.com/blog/devops/devops-automation\""
     },
     {
       "ID": 13,
-      "Term": "Architecture Development Method (ADM)",
-      "Description": "The Architecture Development Method (ADM) is a step-by-step process within the TOGAF framework for creating and managing enterprise architectures. It provides a structured approach to design, plan, and implement architecture solutions.",
-      "References": "[13] “What is TOGAF Architecture Development Method - EA Learning,” www.ealearning.com. https://www.ealearning.com/info-centre/togaf-adm.html#:~:text=The%20ADM%20is%20a%20generic."
+      "Term": "Integration",
+      "Description": "Integration in DevOps refers to the seamless merging of code changes and components from multiple developers into a shared repository to ensure collaborative and efficient software development",
+      "References": "A. Agarwal, S. Gupta and T. Choudhury, \"Continuous and Integrated Software Development using DevOps,\"2018 International Conference on Advances in Computing and Communication Engineering (ICACCE), Paris, France,2018, pp.290-293, doi: 10.1109/ICACCE.2018.8458052."
     },
     {
       "ID": 14,
-      "Term": "Minimum Viable Product (MVP)",
-      "Description": "A version of a product with the minimum features required to satisfy early customers and gather feedback for future development.",
-      "References": "[14] ProductPlan, “What is a Minimum Viable Product (MVP)? | A Product Mgmt Definition,” www.productplan.com, 2022. https://www.productplan.com/glossary/minimum-viable-product/"
+      "Term": "Customer-centric action",
+      "Description": "Customer-centric action in DevOps prioritizes delivering value to customers by continuously incorporating their feedback and requirements throughout the software development and deployment lifecycle.",
+      "References": "Frederik Schukken (2016, September 22). DEVOPS PRINCIPLE #1-CUSTOMER-CENTRIC ACTION. DevOps Agile Skills Association.Retrieved from \"https://www.devopsagileskills.org/event/488-devops-principle-1-customer-centric-action/\""
     },
     {
       "ID": 15,
-      "Term": "Continuous Integration/Continuous Deployment (CI/CD)",
-      "Description": "Continuous Integration/Continuous Deployment, a software development practice where code changes are automatically built, tested, and deployed to production.",
-      "References": "[15] Redhat, “What is CI/CD?,” Redhat.com, 2019. https://www.redhat.com/en/topics/devops/what-is-ci-cd"
+      "Term": "Behaviour-Driven Design (BDD)",
+      "Description": "Behavior-Driven Design in DevOps promotes collaboration between developers, testers, and stakeholders by using human-readable scenarios to define the desired behavior of a software system.",
+      "References": "Laura Fitzgibbons. Behavior-Driven Design (BDD). Tech Target. Retrieved from \"https://www.techtarget.com/searchsoftwarequality/definition/Behavior-driven-development-BDD\""
     },
     {
       "ID": 16,
       "Term": "DevOps Cycle",
-      "Description": "A set of continuous development, testing, deployment, and monitoring practices aimed at improving collaboration and efficiency between software developers and IT operations teams.",
-      "References": "[16] “DevOps Lifecycle : Different Phases in DevOps,” BrowserStack. https://www.browserstack.com/guide/devops-lifecycle#:~:text=The%20DevOps%20lifecycle%20is%20a"
+      "Description": "DevOps cycle is a continuous and iterative process that encompasses planning, development, testing, deployment, and monitoring to deliver software faster and with higher quality.",
+      "References": "Mayank Gokarna (2021, January). DevOps phases across Software Development Lifecycle. Research Gate. Retrieved from \"https://www.researchgate.net/publication/348288718_DevOps_phases_across_Software_Development_Lifecycle\""
     },
     {
       "ID": 17,
-      "Term": "Productivity",
-      "Description": "The measure of how efficiently resources, such as time and effort, are utilized to achieve desired outputs or results.",
-      "References": "[17] corporateName:Productivity Commission, “What is Productivity?,” www.pc.gov.au, May 13, 2021. https://www.pc.gov.au/what-is-productivity"
+      "Term": "IaC",
+      "Description": "IaC stands for Infrastructure as Code in DevOps, which is the practice of managing and provisioning infrastructure using machine-readable configuration files, enabling automation, consistency, and version control for infrastructure setup.",
+      "References": "Christopher Null. Infrastructure as code: The engine at the heart of DevOps. Tech Beacon. Retrieved from \"https://techbeacon.com/enterprise-it/infrastructure-code-engine-heart-devops\""
     },
     {
       "ID": 18,
-      "Term": "Everything-as-Code",
-      "Description": "The practice of representing all aspects of software development and infrastructure management as code, allowing for automation and version control.",
-      "References": "[18] O. Deploy, “What is Everything as Code?,” Octopus Deploy. https://octopus.com/blog/what-is-everything-as-code#:~:text=Everything%20as%20Code%20(EaC)%20is"
+      "Term": "Test-Driven Design (TDD)",
+      "Description": "Test-Driven Design (TDD) is a software development approach where developers write tests before writing the code, ensuring that the code meets the requirements and functions as expected.",
+      "References": "D. Marković, Ž. Jovanović, U. Pešović and S. Ranđić, \"Test-Driven Development (TDD) in development of measure application and transducers services, \"2011 19thTelecommunications Forum (TELFOR) Proceedings of Papers,Belgrade, Serbia, 2011, pp. 1316-1319, doi: 10.1109/TELFOR.2011.6143795."
     },
     {
       "ID": 19,
-      "Term": "IT Service Management",
-      "Description": "A set of practices for planning, delivering, managing, and improving IT services to meet the needs of an organization and its customers.",
-      "References": "[19] Wikipedia Contributors, “IT service management,” Wikipedia, Mar. 20, 2019. https://en.wikipedia.org/wiki/IT_service_management"
+      "Term": "Rapid deployment",
+      "Description": "Rapid deployment refers to the quick and frequent release of software updates, changes, or features into production environments, often enabled by automation and DevOps practices",
+      "References": "A. M. Mowad, H. Fawareh and M. A. Hassan, \"Effect of Using Continuous Integration (CI) and Continuous Delivery (CD) Deployment in DevOps to reduce the Gap between Developer and Operation,\" 2022 International Arab Conference on Information Technology (ACIT), Abu Dhabi, United Arab Emirates, 2022, pp. 1-8, doi: 10.1109/ACIT57182.2022.9994139."
     },
     {
       "ID": 20,
-      "Term": "DevOps Principles",
-      "Description": "Core principles in the DevOps culture, including automation, collaboration, continuous feedback, and shared responsibility between development and operations teams.",
-      "References": "[20] S. Roddewig, “7 Principles of DevOps for Successful Development Teams,” blog.hubspot.com. https://blog.hubspot.com/website/devops-principles"
-    },
+      "Term": "SCM (Source Code Management)",
+      "Description": "SCM in DevOps stands for Source Code Management, which involves the management and version control of source code throughout the software development lifecycle to facilitate collaboration and code integrity.",
+      "References": "Edwin Klesman (2022, April 28). Why You Should Apply Source Code Management With GIT. Medium. Retrieved from \"https://eekayonline.medium.com/why-you-should-apply-source-code-management-with-git-614af2e63835\""
+    }
   ];
 
   res.render('index', {
-    title: 'DevOps SIT722 Glossary', sub: 'Explore my website featuring a curated collection of DevOps terms and their concise descriptions.',glossaryData: glossaryData });
+    title: 'DevOps SIT722 Glossary', sub: 'Welcome to my SIT722 Glossary', glossaryData: glossaryData
+  });
 });
 
 module.exports = router;
