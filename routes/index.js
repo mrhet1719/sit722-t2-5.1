@@ -123,7 +123,69 @@ router.get('/', function (req, res, next) {
       "Term": "SCM (Source Code Management)",
       "Description": "SCM in DevOps stands for Source Code Management, which involves the management and version control of source code throughout the software development lifecycle to facilitate collaboration and code integrity.",
       "References": "Edwin Klesman (2022, April 28). Why You Should Apply Source Code Management With GIT. Medium. Retrieved from \"https://eekayonline.medium.com/why-you-should-apply-source-code-management-with-git-614af2e63835\""
+    },
+    {
+      "ID": 21,
+      "Term": "Multi Container Application",
+      "Description": "A multi-container application is a software setup composed of multiple distinct, interconnected containers that work together to fulfill various functions of the application, enabling efficient modularization, scalability, and resource isolation.",
+      "References": "Shashank Sharma. Using Awesome-Compose to Build and Deploy Your Multi-Container Application. Docker Blog. Retrieved from \"https://www.docker.com/blog/using-awesome-compose-to-build-and-deploy-your-multi-container-application\""
+    },
+    {
+      "ID": 22,
+      "Term": "Loosely coupled",
+      "Description": "It is design principle where components or services within a cloud-based system are designed to interact with minimal dependencies, enabling flexibility, scalability, and easier maintenance.",
+      "References": "Marcio Sete (2018, May 31). Loosely Coupled Architecture. Medium. Retrieved from \"https://medium.com/@marciosete/loosely-coupled-architecture-6a2b06082316\"",
+    },
+    {
+      "ID": 23,
+      "Term": "Docker Compose",
+      "Description": "It is tool used to define and manage multi-container Docker applications using a single configuration file.",
+      "References": "Kanav Preet (2023, July 26). The Role of Docker Compose. Knowledge Hut. Retrieved from \"https://www.knowledgehut.com/blog/devops/docker-compose\""
+    },
+    {
+      "ID": 24,
+      "Term": "Docker Image",
+      "Description": "It is a lightweight, standalone, executable software package that includes all the necessary code, runtime, libraries, and settings required to run a piece of software.",
+      "References": "Alexander Gillis. Docker image. Tech Target. Retrieve From \"https://www.techtarget.com/searchitoperations/definition/Docker-image\""
+
+    },
+    {
+      "ID": 25,
+      "Term": "Docker Container",
+      "Description": "Runnable instance of a Docker image, encapsulating an application and its dependencies in an isolated environment.",
+      "References": "Vineet Chaturvedi. What Is Docker and Docker Container ? A Deep Dive Into Docker !. Edureka. Retrieved from \"https://www.edureka.co/blog/what-is-docker-container\""
+    },
+    {
+      "ID": 26,
+      "Term": "Declarative Container Management",
+      "Description": "A container orchestration approach where you specify the desired state of your infrastructure and applications, and the orchestration system automatically works to maintain that state, ensuring scalability, reliability, and consistent configurations.",
+      "References": "Bob Reselman (2022, May 09). Imperative vs. declarative Kubernetes commands: What's the difference?. The Server Side. Retrieved From \"https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/Imperative-vs-declarative-Kubernetes-commands-Whats-the-difference\""
+    },
+    {
+      "ID": 27,
+      "Term": "YAML",
+      "Description": "It is stands for \"YAML Ain't Markup Language,\" and it is a human- readable data serialization format used for configuration files and structured data representation.",
+      "References": "Dionysia Lemonaki (2022, November 11). What is YAML? The YML File Format. Free Code Camp. Retrieved From \"https://www.freecodecamp.org/news/what-is-yaml-the-yml-file-format\""
+    },
+    {
+      "ID": 28,
+      "Term": "Container Communication",
+      "Description": "It refers to the interaction and exchange of data between separate containers, often within the same application, to enable collaboration and information sharing.",
+      "References": "Robert-Jan Kuyper (2021, November 17). Full-Stack development with Docker Compose. Medium. Retrieved from \"https://medium.com/@datails/full-stack-development-with-docker-compose-c517ec826696\""
+    },
+    {
+      "ID": 29,
+      "Term": "Independently Deployable",
+      "Description": "It refers to the capability of deploying individual components, services, or microservices of an application separately, without affecting the functionality of the overall system.",
+      "References": "Chris Richardson. Essential characteristics of the microservice architecture: independently deployable. Microservices. Retrieve From \"https://microservices.io/post/architecture/2022/05/04/microservice-architecture-essentials-deployability.html\""
+    },
+    {
+      "ID": 30,
+      "Term": "Port Mapping",
+      "Description": "It is the process of associating ports on the host machine with ports on a container, allowing external requests to reach services running inside the container.",
+      "References": "Steve (2023, February 25). Understanding Port Forwarding – Beginners Guide. Steves Smart Home Guide. Retrieve From \"https://stevessmarthomeguide.com/understanding-port-forwarding\""
     }
+
   ];
 
   res.render('index', {
