@@ -184,7 +184,67 @@ router.get('/', function (req, res, next) {
       "Term": "Port Mapping",
       "Description": "It is the process of associating ports on the host machine with ports on a container, allowing external requests to reach services running inside the container.",
       "References": "Steve (2023, February 25). Understanding Port Forwarding – Beginners Guide. Steves Smart Home Guide. Retrieve From \"https://stevessmarthomeguide.com/understanding-port-forwarding\""
-    }
+    },
+    {
+      "ID": 31,
+      "Term": "Cluster",
+      "Description": "A cluster in cloud computing is a group of interconnected virtual or physical machines used to enhance performance and scalability for various applications and services.",
+      "References": "Qasim Khan (2023,June  03). What Is Cluster in Cloud Computing & How It's Revolutionizing Business Scalability and Performance. Red Switches. Retrieve From \"https://www.redswitches.com/blog/cluster-in-cloud-computing\""
+    },
+    {
+      "ID": 32,
+      "Term": "Kubernetes",
+      "Description": "Kubernetes is an open-source container orchestration platform for automating the deployment, scaling, and management of containerized applications.",
+      "References": "Peter Jausovec (2023,August  03). Kubernetes: A Platform for Building Modern Applications. Solo.io. Retrieve From \"https://www.solo.io/blog/kubernetes-platform-modern-applications\""
+    },
+    {
+      "ID": 33,
+      "Term": "Automated rollouts and rollbacks",
+      "Description": "Automated rollouts and rollbacks refer to the process in Kubernetes where updates to applications (deployments) are managed automatically, allowing for seamless deployment of new versions and automatic fallback to previous versions in case of issues or failures.",
+      "References": "Gergely Risko (2019,October). How do you rollback deployments in Kubernetes?. learnk8s. Retrieve From \"https://learnk8s.io/kubernetes-rollbacks\""
+    },
+    {
+      "ID": 34,
+      "Term": "Automatic bin packing",
+      "Description": "In cloud computing, automatic bin packing refers to the automated allocation of virtual resources (e.g., virtual machines, containers) into physical servers or clusters to optimize resource utilization, reduce operational costs, and improve performance while efficiently packing workloads to minimize wasted resources.",
+      "References": "N.K. Mydhili (2019, February). Bin packing algorithms for virtual machine placement in cloud computing: A review. Research Gate. Retrieve From \"https://www.researchgate.net/publication/332546043_Bin_packing_algorithms_for_virtual_machine_placement_in_cloud_computing_A_review\""
+    },
+    {
+      "ID": 35,
+      "Term": "Pod",
+      "Description": "Pods in Kubernetes are the smallest deployable units that can hold one or multiple containers, sharing the same network and storage resources, and are the basic building blocks for applications in a cluster.",
+      "References": "Atul Kumar (2023,August  07). Kubernetes Pods For Beginners . K21 Academy.Retrieve From \"https://k21academy.com/docker-kubernetes/kubernetes-pods-for-beginners\""
+    },
+    {
+      "ID": 36,
+      "Term": "Terraform",
+      "Description": "Terraform is an infrastructure as code(IaC) tool used for provisioning and managing cloud resources and infrastructure in a declarative and automated manner.",
+      "References": "Mike Vanbuskirk (2023,June  08). What is Terraform &amp; Infrastructure as Code (IaC)?. Plural Sight. Retrieve From \"https://www.pluralsight.com/resources/blog/cloud/what-is-terraform-infrastructure-as-code-iac\""
+    },
+    {
+      "ID": 37,
+      "Term": "HCL",
+      "Description": "HCL (HashiCorp Configuration Language) is a domain-specific language used in tools like Terraform and Consul to define and configure infrastructure and services as code in a human-readable and machine-parsable format.",
+      "References": "Linode (2023,March  09). An Introduction to HashiCorp Configuration Language (HCL). Linode. Retrieve From \"https://www.linode.com/docs/guides/introduction-to-hcl\""
+    },
+    {
+      "ID": 38,
+      "Term": "Container Registry",
+      "Description": "A container registry is a centralized repository for storing and distributing container images used in container-based applications like Docker, ensuring efficient image management and sharing across systems.",
+      "References": "Roman Glushach (2023,July  27). Container Registry: The Essential Tool for Working with Docker Images. Medium. Retrieve From \"https://romanglushach.medium.com/container-registry-the-essential-tool-for-working-with-docker-images-5f394e0bed87\""
+    },
+    {
+      "ID": 39,
+      "Term": "Kubernetes Node",
+      "Description": "A Kubernetes node is a physical or virtual machine in a cluster responsible for running containers and providing the necessary resources and services to manage and maintain them.",
+      "References": "Alan R. Earls . Kubernetes node. Tech Target. Retrieve From \"https://www.techtarget.com/searchitoperations/definition/Kubernetes-Node\""
+    },
+    {
+      "ID": 40,
+      "Term": "Resource Groups",
+      "Description": "Resource groups are logical containers in cloud computing platforms, such as Microsoft Azure, used for organizing and managing related cloud resources, simplifying management, billing, and access control within a specific project or application.",
+      "References": "Smikar (2023,March  08). What are Azure Resource Groups?. Smikar Softwares. Retrieve From \"https://www.smikar.com/what-are-azure-resource-groups/\""
+    },
 
   ];
 
