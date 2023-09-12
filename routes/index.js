@@ -243,8 +243,68 @@ router.get('/', function (req, res, next) {
       "ID": 40,
       "Term": "Resource Groups",
       "Description": "Resource groups are logical containers in cloud computing platforms, such as Microsoft Azure, used for organizing and managing related cloud resources, simplifying management, billing, and access control within a specific project or application.",
-      "References": "Smikar (2023,March  08). What are Azure Resource Groups?. Smikar Softwares. Retrieve From \"https://www.smikar.com/what-are-azure-resource-groups/\""
+      "References": "Smikar (2023,March  08). What are Azure Resource Groups?. Smikar Softwares. Retrieve From \"https://www.smikar.com/what-are-azure-resource-groups\""
     },
+    {
+      "ID": 41,
+      "Term": "Testing",
+      "Description": "Testing in software development is the process of evaluating a software application to identify and fix defects and ensure it functions as intended",
+      "References": "Kinza Yasar .Software Testing. Tech Target.Retrieve From \"https://www.techtarget.com/whatis/definition/software-testing\""
+    },
+    {
+      "ID": 42,
+      "Term": "Regression test",
+      "Description": "Regression testing in software development verifies that recent code changes have not adversely affected existing functionality.",
+      "References": "Thomas Hamilton (2023,August  05). What is Regression Testing? Test Cases (Example). Guru99. Retrieve From \"https://www.guru99.com/regression-testing.html\""
+    },
+    {
+      "ID": 43,
+      "Term": "Security Test",
+      "Description": "Security testing in software development aims to identify vulnerabilities and weaknesses in a system to protect it from potential threats and breaches.",
+      "References": "Ankit Pahuja (2023,June  21). What is Security Testing and Why is it important?. Getastra. Retrieve From \"https://www.getastra.com/blog/security-audit/what-is-security-testing\""
+    },
+    {
+      "ID": 44,
+      "Term": "Jest",
+      "Description": "Jest is a popular JavaScript testing framework for testing JavaScript code and applications",
+      "References": "Rajitha R (2023,March  08). Jest: A JavaScript Testing Framework. Bridge Global. Retrieve From \"https://www.bridge-global.com/blog/jest-a-javascript-testing-framework\""
+    },
+    {
+      "ID": 45,
+      "Term": "Automated Testing",
+      "Description": "Automated testing is the use of software tools and scripts to perform tests on a software application, reducing manual testing effort and increasing efficiency.",
+      "References": "Alexander S. Gillis. Automated Testing. Tech Targets. Retrieve From \"https://www.techtarget.com/searchsoftwarequality/definition/automated-software-testing\""
+    },
+    {
+      "ID": 46,
+      "Term": "Unit Testing",
+      "Description": "Unit testing is the practice of testing individual components or units of code in isolation to ensure they function correctly.",
+      "References": "Thomas Hamilton (2023,August  05). Unit Testing Tutorial – What is, Types & Test Example. Guru99. Retrieve From \"https://www.guru99.com/unit-testing-guide.html\""
+    },
+    {
+      "ID": 47,
+      "Term": "Integration Testing",
+      "Description": "Integration testing is the process of evaluating interactions between different components or modules to ensure they work together as intended within a software system.",
+      "References": "KnwoledgeHut (2023,September  05). Integration Testing: Types, Approaches, Tools, Examples. Knowledge Hut. Retrieve From \"https://www.knowledgehut.com/blog/software-testing/integration-testing\""
+    },
+    {
+      "ID": 48,
+      "Term": "End-to-End Testing",
+      "Description": "End-to-end testing is a software testing methodology that examines the entire application workflow, testing it from start to finish to ensure all components and systems work seamlessly together as a whole.",
+      "References": "Alexander S. Gillis . End-to-End testing. Smikar Softwares. Retrieve From \"https://www.techtarget.com/searchsoftwarequality/definition/End-to-end-testing\""
+    },
+    {
+      "ID": 49,
+      "Term": "Cypress",
+      "Description": "Cypress is a JavaScript- based end - to - end testing framework used for testing web applications.It offers a comprehensive testing environment for web developers, featuring real - time testing and an interactive debugging system.",
+      "References": "Eran Kinsbruner (2021,April  02). What is Cypress Testing Automation? What It Is and How to Get Started. Perfecto. Retrieve From \"https://www.perfecto.io/blog/cypress-testing\""
+    },
+    {
+      "ID": 50,
+      "Term": "Version Control",
+      "Description": "Version control is a system that tracks and manages changes to source code and project files, enabling collaboration and preserving code history.",
+      "References": "Anjana Rao  (2023,June  06). What is version control? Definition, types, systems and tools. Log Rocket. Retrieve From \"https://blog.logrocket.com/product-management/version-control-systems-definition-types\""
+    }
 
   ];
 
